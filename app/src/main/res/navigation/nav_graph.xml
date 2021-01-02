@@ -10,10 +10,13 @@
         android:name="com.example.voicerecordersample.ui.RecordFragment"
         android:label="record_fragment"
         tools:layout="@layout/fragment_record" >
+        <action
+            android:id="@+id/action_recordFragment_to_audioLIstFragment"
+            app:destination="@id/audioLIstFragment" />
     </fragment>
     <fragment
         android:id="@+id/audioLIstFragment"
         android:name="com.example.voicerecordersample.ui.AudioListFragment"
         android:label="fragment_audio_l_ist_list"
-        tools:layout="@layout/fragment_audio_list_list" />
+        tools:layout="@layout/fragment_audio_list" />
 </navigation>
