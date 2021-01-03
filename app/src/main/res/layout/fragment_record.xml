@@ -51,7 +51,7 @@
             />
 
         <include
-            layout="@layout/btn_record_running"
+            layout="@layout/btn_record_ready"
             android:id="@+id/record_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

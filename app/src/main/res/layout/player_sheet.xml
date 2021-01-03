@@ -8,7 +8,7 @@
     android:background="@drawable/bg_player"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
     app:behavior_hideable="true"
-    app:behavior_peekHeight="68dp">
+    app:behavior_peekHeight="56dp">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -69,17 +69,19 @@
         android:textAlignment="center"
         />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/player_play_btn"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
+        app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+        android:background="@android:color/transparent" />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,9 +90,10 @@
         app:layout_constraintEnd_toStartOf="@+id/player_play_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/player_play_btn"
-        app:srcCompat="@drawable/ic_baseline_fast_rewind_24" />
+        app:srcCompat="@drawable/ic_baseline_fast_rewind_24"
+        android:background="@android:color/transparent" />
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -99,7 +102,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/player_play_btn"
         app:layout_constraintTop_toTopOf="@+id/player_play_btn"
-        app:srcCompat="@drawable/ic_baseline_fast_forward_24" />
+        app:srcCompat="@drawable/ic_baseline_fast_forward_24"
+        android:background="@android:color/transparent" />
 
     <SeekBar
         android:layout_width="0dp"
