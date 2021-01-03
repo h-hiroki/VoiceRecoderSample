@@ -40,5 +40,19 @@ class RecordFragment : Fragment() {
         binding.audioListBtn.setOnClickListener {
             navController.navigate(R.id.action_recordFragment_to_audioLIstFragment)
         }
+
+        binding.recordBtn.setOnClickListener {
+            if (viewModel.isRecording) {
+                // stop recording
+                binding.recordBtn.setImageDrawable(resources.getDrawable(R.drawable.ic_baseline_mic_48, null))
+                binding.recordBtn.background = resources.getDrawable(R.drawable.bg_record_ready, null)
+                viewModel.toggleIsRecording()
+            } else {
+                // start recording
+                binding.recordBtn.setImageDrawable(resources.getDrawable(R.drawable.ic_baseline_mic_off_48, null))
+                binding.recordBtn.background = resources.getDrawable(R.drawable.bg_record_running, null)
+                viewModel.toggleIsRecording()
+            }
+        }
     }
 }
