@@ -60,7 +60,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/audio_list_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -69,6 +69,7 @@
             app:layout_constraintStart_toEndOf="@id/record_btn"
             app:layout_constraintEnd_toEndOf="parent"
             android:padding="16dp"
-            android:src="@drawable/ic_baseline_format_list_bulleted_24"/>
+            android:src="@drawable/ic_baseline_format_list_bulleted_24"
+            android:background="@android:color/transparent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
