@@ -94,7 +94,7 @@ class RecordFragment : Fragment() {
         binding.recordTimer.base = SystemClock.elapsedRealtime()
         binding.recordTimer.start()
 
-        var newRecordFilePath = requireActivity().getExternalFilesDir("/")?.absolutePath
+        var newRecordFilePath = requireActivity().getExternalFilesDir("/")!!.absolutePath
         var formatter = SimpleDateFormat("yyyy_MM_dd__hh_mm_ss", Locale.JAPAN)
         var now = Date()
         recordingFileName = "Recording_" + formatter.format(now) + ".3gp";
